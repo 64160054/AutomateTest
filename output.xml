@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-22T11:00:53.045412" rpa="false" schemaversion="5">
+<suite id="s1" name="FN PSF 01" source="D:\MulDeep\64160054\Automate\FN_PSF_01.robot">
+<test id="s1-t1" name="TC-PSF-01-01-01 ตรวจสอบการกรอกข้อมูล Username รับไม่เกินจำนวน 6 ตัวอักษรและไม่น้อยกว่า 6 ตัวอักษร" line="42">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:00:53.217950" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:00:53.217950" elapsed="32.296118"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:00:53.216953" elapsed="32.297115"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:01:25.516062" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:01:25.516062" elapsed="0.066821"/>
+</kw>
+<arg>${user_name1}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:01:25.515066" elapsed="0.067817"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:01:25.583881" elapsed="2.071889"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:00:53.214959" elapsed="34.440811"/>
+</test>
+<test id="s1-t2" name="TC-PSF-01-01-02 ตรวจสอบการกรอกข้อมูล Username รับเกินจำนวน 6 ตัวอักษร" line="45">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:01:27.658725" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:01:27.658725" elapsed="32.327337"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:01:27.657728" elapsed="32.329331"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:01:59.987059" level="INFO">Typing text 'pichet01' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:01:59.987059" elapsed="0.063830"/>
+</kw>
+<arg>${user_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:01:59.987059" elapsed="0.063830"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:02:00.050889" elapsed="2.056859"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:01:27.656731" elapsed="34.452029"/>
+</test>
+<test id="s1-t3" name="TC-PSF-01-01-03 ตรวจสอบการกรอกข้อมูล Username รับน้อยกว่าจำนวน 6 ตัวอักษร" line="48">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:02.111749" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:02:02.111749" elapsed="1.311054"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:02:02.111749" elapsed="1.311054"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:03.423802" level="INFO">Typing text 'piche' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:02:03.422803" elapsed="0.073803"/>
+</kw>
+<arg>${user_name3}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:02:03.422803" elapsed="0.073803"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:02:03.497603" elapsed="2.058682"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:02:02.109755" elapsed="3.446530"/>
+</test>
+<test id="s1-t4" name="TC-PSF-01-01-04 ตรวจสอบการกรอกข้อมูล Password รับไม่เกินจำนวน 6 ตัวอักษรและไม่น้อยกว่า 6 ตัวอักษร" line="51">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:05.559277" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:02:05.559277" elapsed="1.268560"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:02:05.559277" elapsed="1.268560"/>
+</kw>
+<kw name="กรอกรหัสผ่าน">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:06.828835" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:02:06.828835" elapsed="0.073318"/>
+</kw>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล password ผู้ใช้</doc>
+<status status="PASS" start="2024-02-22T11:02:06.827837" elapsed="0.074316"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:02:06.903149" elapsed="2.063409"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:02:05.557283" elapsed="3.409275"/>
+</test>
+<test id="s1-t5" name="TC-PSF-01-01-05 ตรวจสอบการกรอกข้อมูล Password รับเกินจำนวน 6 ตัวอักษร" line="54">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:08.969449" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:02:08.969449" elapsed="32.279310"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:02:08.968451" elapsed="32.281306"/>
+</kw>
+<kw name="กรอกรหัสผ่าน">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:41.250755" level="INFO">Typing text '1234567' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:02:41.250755" elapsed="0.068815"/>
+</kw>
+<arg>${pass_name3}</arg>
+<doc>ใช้กรอกข้อมูล password ผู้ใช้</doc>
+<status status="PASS" start="2024-02-22T11:02:41.249757" elapsed="0.069813"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:02:41.319570" elapsed="2.062359"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:02:08.967454" elapsed="34.414475"/>
+</test>
+<test id="s1-t6" name="TC-PSF-01-01-06 ตรวจสอบการกรอกข้อมูล Password รับน้อยกว่าจำนวน 6 ตัวอักษร" line="57">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:43.384917" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:02:43.384917" elapsed="1.313037"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:02:43.384917" elapsed="1.313037"/>
+</kw>
+<kw name="กรอกรหัสผ่าน">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:44.698951" level="INFO">Typing text '12345' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:02:44.698951" elapsed="0.071808"/>
+</kw>
+<arg>${pass_name1}</arg>
+<doc>ใช้กรอกข้อมูล password ผู้ใช้</doc>
+<status status="PASS" start="2024-02-22T11:02:44.698951" elapsed="0.072804"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:02:44.771755" elapsed="2.073881"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:02:43.382922" elapsed="3.463775"/>
+</test>
+<test id="s1-t7" name="TC-PSF-01-01-07 ตรวจสอบการกรอกข้อมูล Password รับข้อความที่กรอกไม่แสดงตัวอักษร" line="60">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:02:46.849753" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:02:46.849753" elapsed="32.310311"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:02:46.848757" elapsed="32.311307"/>
+</kw>
+<kw name="กรอกรหัสผ่าน">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:19.161062" level="INFO">Typing text '12345' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:19.161062" elapsed="0.063829"/>
+</kw>
+<arg>${pass_name1}</arg>
+<doc>ใช้กรอกข้อมูล password ผู้ใช้</doc>
+<status status="PASS" start="2024-02-22T11:03:19.161062" elapsed="0.064827"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:03:19.225889" elapsed="2.061306"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:02:46.847757" elapsed="34.439438"/>
+</test>
+<test id="s1-t8" name="TC-PSF-01-01-08 ตรวจสอบการเข้าสู่ระบบสำหรับผู้ใช้สถานะ อาจารย์" line="63">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:21.289192" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:03:21.289192" elapsed="1.351944"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:03:21.289192" elapsed="1.351944"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:22.642134" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:22.642134" elapsed="0.080784"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:22.723915" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:22.722918" elapsed="0.058872"/>
+</kw>
+<arg>${user_name1}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:03:22.642134" elapsed="0.139656"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:22.781790" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:22.781790" elapsed="0.054825"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:03:22.781790" elapsed="0.054825"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:03:22.837611" elapsed="2.069736"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:03:21.288195" elapsed="3.620146"/>
+</test>
+<test id="s1-t9" name="TC-PSF-01-01-09 ตรวจสอบการเข้าสู่ระบบสำหรับผู้ใช้สถานะ เจ้าหน้าที่" line="67">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:24.913325" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:03:24.913325" elapsed="32.259985"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:03:24.913325" elapsed="32.259985"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:57.174306" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:57.174306" elapsed="0.063829"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:57.238135" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:57.238135" elapsed="0.048871"/>
+</kw>
+<arg>${user_name4}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:03:57.173310" elapsed="0.113696"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:57.288003" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:03:57.288003" elapsed="0.048870"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:03:57.288003" elapsed="0.048870"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:03:57.336873" elapsed="2.100742"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:03:24.911332" elapsed="34.526283"/>
+</test>
+<test id="s1-t10" name="TC-PSF-01-01-10 ตรวจสอบการเข้าสู่ระบบสำหรับผู้ใช้ที่ไม่มีสิทธิ์เข้าสู่ระบบ" line="71">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:03:59.440610" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:03:59.440610" elapsed="1.335721"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:03:59.440610" elapsed="1.335721"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:00.777328" level="INFO">Typing text 'suda' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:00.777328" elapsed="0.075798"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:00.854123" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:00.853126" elapsed="0.053856"/>
+</kw>
+<arg>${user_name5}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:04:00.776331" elapsed="0.130651"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:00.907978" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:00.907978" elapsed="0.060838"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:04:00.906982" elapsed="0.061834"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:04:00.968816" elapsed="2.057780"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:03:59.438616" elapsed="3.587980"/>
+</test>
+<test id="s1-t11" name="TC-PSF-01-02-01 ตรวจสอบการทำงานของปุ่ม" line="75">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:03.028600" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:04:03.028600" elapsed="1.425224"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:04:03.028600" elapsed="1.426220"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:04.455818" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:04.455818" elapsed="0.072805"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:04.529620" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:04.529620" elapsed="0.048870"/>
+</kw>
+<arg>${user_name4}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:04:04.454820" elapsed="0.124667"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:04.579487" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:04.579487" elapsed="0.064374"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:04:04.579487" elapsed="0.064374"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:04:04.644859" elapsed="2.068193"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:04:03.027602" elapsed="3.686456"/>
+</test>
+<test id="s1-t12" name="TC-PSF-01-03-01 ตรวจสอบการแสดงผลชื่อผู้ใช้งาน" line="79">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:06.717535" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:04:06.717535" elapsed="32.269063"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:04:06.717535" elapsed="32.269063"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:38.987595" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:38.986598" elapsed="0.065823"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:39.053420" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:39.053420" elapsed="0.046874"/>
+</kw>
+<arg>${user_name1}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:04:38.986598" elapsed="0.114693"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:39.101291" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:04:39.101291" elapsed="0.048021"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:04:39.101291" elapsed="0.049020"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:04:39.150311" elapsed="2.065422"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:04:06.716507" elapsed="34.499653"/>
+</test>
+<test id="s1-t13" name="TC-PSF-01-03-02 ตรวจสอบการแสดงผลสถานะผู้ใช้งานสถานะอาจารย์" line="83">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:04:41.218157" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:04:41.218157" elapsed="32.308561"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:04:41.218157" elapsed="32.308561"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:13.527715" level="INFO">Typing text 'pichet' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:13.527715" elapsed="0.065824"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:13.594536" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:13.594536" elapsed="0.058843"/>
+</kw>
+<arg>${user_name1}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:05:13.526718" elapsed="0.126661"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:13.654376" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:13.654376" elapsed="0.067819"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:05:13.653379" elapsed="0.068816"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:05:13.723192" elapsed="2.068355"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:04:41.216160" elapsed="34.575387"/>
+</test>
+<test id="s1-t14" name="TC-PSF-01-03-03 ตรวจสอบการแสดงผลสถานะผู้ใช้งานสถานะเจ้าหน้าที่" line="87">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:15.794533" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:05:15.793536" elapsed="32.309737"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:05:15.793536" elapsed="32.309737"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:48.104271" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:48.104271" elapsed="0.065287"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:48.169558" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:48.169558" elapsed="0.048868"/>
+</kw>
+<arg>${user_name4}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:05:48.104271" elapsed="0.114155"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:48.219424" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:05:48.219424" elapsed="0.059847"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:05:48.218426" elapsed="0.060845"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:05:48.280269" elapsed="2.069907"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:05:15.792539" elapsed="34.557637"/>
+</test>
+<test id="s1-t15" name="TC-PSF-01-03-04 ตรวจสอบการแสดงผลข้อมูลรายชื่อนิสิตรอการพินิจในระบบ" line="91">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:05:50.353172" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-22T11:05:50.353172" elapsed="32.225762"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-02-22T11:05:50.353172" elapsed="32.225762"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:06:22.579931" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:06:22.579931" elapsed="0.067819"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:06:22.647750" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:06:22.647750" elapsed="0.048869"/>
+</kw>
+<arg>${user_name4}</arg>
+<arg>${pass_name2}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-02-22T11:06:22.579931" elapsed="0.116688"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-22T11:06:22.697616" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-22T11:06:22.697616" elapsed="0.059841"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-02-22T11:06:22.696619" elapsed="0.060838"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-22T11:06:22.757457" elapsed="2.058201"/>
+</kw>
+<status status="PASS" start="2024-02-22T11:05:50.351177" elapsed="34.464481"/>
+</test>
+<status status="PASS" start="2024-02-22T11:00:53.046409" elapsed="331.770222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="15" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="15" fail="0" skip="0" id="s1" name="FN PSF 01">FN PSF 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
