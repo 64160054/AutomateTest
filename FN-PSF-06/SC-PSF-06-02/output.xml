@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-06T01:25:29.339336" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-06-06" source="D:\MulDeep\64160054\Automate\FN-PSF-06\SC-PSF-06-02\TS-PSF-06-06.robot">
+<test id="s1-t1" name="TS-PSF-06-06-01 ตรวจสอบการกรอกข้อมูลลงในระบบ" line="19">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-06T01:25:29.513178" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/followStudentEnpReg/16'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-06T01:25:29.513178" elapsed="32.400581"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-06T01:25:29.513178" elapsed="32.400581"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-06T01:26:01.914758" level="INFO">Typing text 'Test' into text field 'stuEnpReg'.</msg>
+<arg>${EnpReg _stu}</arg>
+<arg>${EnpReg _Edit}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T01:26:01.914758" elapsed="0.058414"/>
+</kw>
+<doc>ใช้สำหรับกรอกข้อมูลที่ต้องการแก้ไข</doc>
+<status status="PASS" start="2024-03-06T01:26:01.913759" elapsed="0.059413"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-06T01:26:01.974169" elapsed="2.057830"/>
+</kw>
+<status status="PASS" start="2024-03-06T01:25:29.511154" elapsed="34.520845"/>
+</test>
+<status status="PASS" start="2024-03-06T01:25:29.340333" elapsed="34.693632"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-06-06">TS-PSF-06-06</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

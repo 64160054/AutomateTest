@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-06T00:55:34.993988" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-05-04" source="D:\MulDeep\64160054\Automate\FN-PSF-05\SC-PSF-05-02\TS-PSF-05-04.robot">
+<test id="s1-t1" name="TC-PSF-05-04-01 ตรวจสอบการแสดงผลข้อมูล รหัสนิสิต ชื่อ-สกุล ระดับ เกรดเฉลี่ย สถานภาพ หน่วยกิตที่ผ่าน หน่วยกิตที่ลง รอพิจารณา" line="33">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:55:35.179521" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-06T00:55:35.179521" elapsed="32.303788"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-06T00:55:35.178494" elapsed="32.304815"/>
+</kw>
+<kw name="กรอกข้อมูลเข้าสู่ระบบ">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:56:07.484305" level="INFO">Typing text 'somnuk' into text field 'email'.</msg>
+<arg>${txt_user}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:56:07.484305" elapsed="0.071892"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:56:07.557195" level="INFO">Typing text '123456' into text field 'password'.</msg>
+<arg>${txt_pass}</arg>
+<arg>${pass_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:56:07.556197" elapsed="0.049712"/>
+</kw>
+<doc>ใช้กรอกข้อมูล username และ password</doc>
+<status status="PASS" start="2024-03-06T00:56:07.483309" elapsed="0.122600"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:56:07.606908" level="INFO">Clicking button 'btnok'.</msg>
+<arg>${bt_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:56:07.605909" elapsed="0.377700"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มเข้าสู่ระบบ</doc>
+<status status="PASS" start="2024-03-06T00:56:07.605909" elapsed="0.377700"/>
+</kw>
+<kw name="เปิดลิงค์">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:56:07.984605" level="INFO">Clicking link 'xpath=//a[@href="/followStudent"]'.</msg>
+<arg>${Choice}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:56:07.984605" elapsed="0.083630"/>
+</kw>
+<arg>${LinkfollowStudent}</arg>
+<doc>ใช้สำหรับเปิดหน้าจอ</doc>
+<status status="PASS" start="2024-03-06T00:56:07.983609" elapsed="0.084626"/>
+</kw>
+<kw name="เปิดลิงค์">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:56:08.069233" level="INFO">Clicking link 'xpath=//a[@href="/followStudentCon/5"]'.</msg>
+<arg>${Choice}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:56:08.069233" elapsed="0.113409"/>
+</kw>
+<arg>${bt_followStudentEdit}</arg>
+<doc>ใช้สำหรับเปิดหน้าจอ</doc>
+<status status="PASS" start="2024-03-06T00:56:08.069233" elapsed="0.113409"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-06T00:56:08.182642" elapsed="2.068126"/>
+</kw>
+<status status="PASS" start="2024-03-06T00:55:35.175502" elapsed="35.076231"/>
+</test>
+<status status="PASS" start="2024-03-06T00:55:34.994985" elapsed="35.257747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-05-04">TS-PSF-05-04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
