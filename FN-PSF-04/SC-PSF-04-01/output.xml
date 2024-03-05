@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-05T23:32:35.301871" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-04-04" source="D:\MulDeep\64160054\Automate\FN-PSF-04\SC-PSF-04-01\TS-PSF-04-04.robot">
+<test id="s1-t1" name="TC-PSF-04-04-01 ตรวจสอบการกรอกข้อมูลด้วย ชื่อ-นามสกุล หรือ รหัสนิสิต" line="25">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:32:35.478398" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentEnp'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T23:32:35.478398" elapsed="1.524673"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T23:32:35.477400" elapsed="1.525671"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:32:37.004066" level="INFO">Typing text 'นาย โชคชัยดื่มโชค' into text field 'searchuser'.</msg>
+<arg>${text_search}</arg>
+<arg>${name_search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-05T23:32:37.004066" elapsed="0.079787"/>
+</kw>
+<doc>ใช้กรอกข้อมูล ชื่อ-นามสกุล หรือ รหัสนิสิต</doc>
+<status status="PASS" start="2024-03-05T23:32:37.003071" elapsed="0.080782"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:32:37.084850" level="INFO">Clicking button 'btnsearch'.</msg>
+<arg>${bt_search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-05T23:32:37.084850" elapsed="0.062834"/>
+</kw>
+<doc>ใช้กดปุ่มค้นหา</doc>
+<status status="PASS" start="2024-03-05T23:32:37.084850" elapsed="0.062834"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T23:32:37.147684" elapsed="2.081596"/>
+</kw>
+<status status="PASS" start="2024-03-05T23:32:35.475405" elapsed="3.753875"/>
+</test>
+<status status="PASS" start="2024-03-05T23:32:35.302867" elapsed="3.928216"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-04-04">TS-PSF-04-04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

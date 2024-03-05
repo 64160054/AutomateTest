@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-06T00:03:58.675723" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-04-12" source="D:\MulDeep\64160054\Automate\FN-PSF-04\SC-PSF-04-04\TS-PSF-04-12.robot">
+<test id="s1-t1" name="TC-PSF-04-12-01 ตรวจสอบการทำงานของปุ่มยกเลิก" line="25">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:03:58.846739" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentEnp'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-06T00:03:58.846739" elapsed="1.540280"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-06T00:03:58.845742" elapsed="1.542275"/>
+</kw>
+<kw name="กดลิงค์">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:04:00.389015" level="INFO">Clicking link 'xpath=//a[@href="/delEnp/17"]'.</msg>
+<arg>${bt_del}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:04:00.389015" elapsed="0.255000"/>
+</kw>
+<doc>ใช้สำหรับกดลิงค์รูป</doc>
+<status status="PASS" start="2024-03-06T00:04:00.388017" elapsed="0.255998"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:04:00.645013" level="INFO">Clicking button 'cancel'.</msg>
+<arg>${Choicebtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:04:00.645013" elapsed="0.072804"/>
+</kw>
+<arg>${bt_cancel}</arg>
+<doc>ใช้กดปุ่มต่างๆ</doc>
+<status status="PASS" start="2024-03-06T00:04:00.644015" elapsed="0.074801"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-06T00:04:00.718816" elapsed="2.073697"/>
+</kw>
+<status status="PASS" start="2024-03-06T00:03:58.844714" elapsed="3.947799"/>
+</test>
+<test id="s1-t2" name="TC-PSF-04-12-02 ตรวจสอบการทำงานของปุ่มตกลง" line="29">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:04:02.795954" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentEnp'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-06T00:04:02.794957" elapsed="1.454160"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-06T00:04:02.794957" elapsed="1.455157"/>
+</kw>
+<kw name="กดลิงค์">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:04:04.251112" level="INFO">Clicking link 'xpath=//a[@href="/delEnp/17"]'.</msg>
+<arg>${bt_del}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:04:04.251112" elapsed="31.120413"/>
+</kw>
+<doc>ใช้สำหรับกดลิงค์รูป</doc>
+<status status="PASS" start="2024-03-06T00:04:04.250114" elapsed="31.121411"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-06T00:04:35.372521" level="INFO">Clicking button 'ok'.</msg>
+<arg>${Choicebtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-06T00:04:35.372521" elapsed="0.064959"/>
+</kw>
+<arg>${bt_submit}</arg>
+<doc>ใช้กดปุ่มต่างๆ</doc>
+<status status="PASS" start="2024-03-06T00:04:35.372521" elapsed="0.064959"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-06T00:04:35.437480" elapsed="2.066717"/>
+</kw>
+<status status="PASS" start="2024-03-06T00:04:02.793958" elapsed="34.711135"/>
+</test>
+<status status="PASS" start="2024-03-06T00:03:58.676693" elapsed="38.828400"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TS-PSF-04-12">TS-PSF-04-12</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

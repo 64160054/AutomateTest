@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-05T23:44:04.347608" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-04-07" source="D:\MulDeep\64160054\Automate\FN-PSF-04\SC-PSF-04-02\TS-PSF-04-07.robot">
+<test id="s1-t1" name="TC-PSF-04-07-01 ตรวจสอบการเลือกข้อมูลของ Dropdown" line="23">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:44:04.519399" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentEnp_add'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T23:44:04.518402" elapsed="1.620746"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T23:44:04.518402" elapsed="1.620746"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:44:06.140145" level="INFO">Selecting options from selection list 'stuLevelEnp' by label ตรี ปกติ.</msg>
+<arg>${txt_level}</arg>
+<arg>${level}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T23:44:06.140145" elapsed="0.053527"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T23:44:06.193672" level="INFO">Selecting options from selection list 'stuStatusEnp' by label 10.</msg>
+<arg>${txt_Status}</arg>
+<arg>${Status}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T23:44:06.193672" elapsed="0.024932"/>
+</kw>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตจบไม่ตรงแผน</doc>
+<status status="PASS" start="2024-03-05T23:44:06.139148" elapsed="0.079456"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T23:44:06.219602" elapsed="2.084806"/>
+</kw>
+<status status="PASS" start="2024-03-05T23:44:04.517405" elapsed="3.789033"/>
+</test>
+<status status="PASS" start="2024-03-05T23:44:04.348582" elapsed="3.960807"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-04-07">TS-PSF-04-07</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -10,7 +10,7 @@ ${txt_pass}     password
 ${user_name}     somnuk
 ${pass_name}    123456
 ${bt_Login}      btnok
-${LinkManageStd}     http://127.0.0.1:8080/manageStudentConsider
+${LinkManageStd}   xpath=//a[@href="/manageStudentConsider"]
 *** Keywords ***
 เปิดหน้าจอ
     [Documentation]     ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด
@@ -24,9 +24,9 @@ ${LinkManageStd}     http://127.0.0.1:8080/manageStudentConsider
     Input Text      ${txt_pass}     ${pass_name}
 เปิดลิงค์
     [Documentation]     ใช้สำหรับเปิดหน้าจอ
-    Open Browser     ${LinkManageStd}   ${web_browser}
+    Click Link     ${LinkManageStd}
 ***Test Cases***
-TC-PSF-03-01-01 ตรวจสอบการแสดงผลข้อมูลรายชื่อนิสิตรอการพินิจ  //เพิ่ม database somnuk ไปเพราะเผลอลบตอนเก่า ส่วน "เปิดลิงค์" ใช้ xpath ไม่ได้ เพราะไม่ใช่ปุ่ม มันหาไม่เจอ
+TC-PSF-03-01-01 ตรวจสอบการแสดงผลข้อมูลรายชื่อนิสิตรอการพินิจ  
     เปิดหน้าจอ
     กรอกข้อมูลเข้าสู่ระบบ 
     กดปุ่ม
