@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-05T22:12:33.102726" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-03-07" source="D:\MulDeep\64160054\Automate\FN-PSF-03\SC-PSF-03-02\TS-PSF-03-07.robot">
+<test id="s1-t1" name="TC-PSF-03-07-01 ตรวจสอบการเลือกข้อมูลของ Dropdown" line="44">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:12:33.277552" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentCon_add'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T22:12:33.277552" elapsed="1.600469"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T22:12:33.276554" elapsed="1.601467"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:12:34.879018" level="INFO">Selecting options from selection list 'stuLevelCon' by label ตรี ปกติ.</msg>
+<arg>${txt_level}</arg>
+<arg>${level}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:12:34.879018" elapsed="0.051861"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:12:34.930879" level="INFO">Selecting options from selection list 'stuStatusCon' by label 10.</msg>
+<arg>${txt_Status}</arg>
+<arg>${Status}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:12:34.930879" elapsed="0.023936"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:12:34.955812" level="INFO">Selecting options from selection list 'considerCon' by label โปรต่ำ.</msg>
+<arg>${txt_considerCon}</arg>
+<arg>${considerCon}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:12:34.954815" elapsed="0.023935"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:12:34.979748" level="INFO">Selecting options from selection list 'considertime' by label 1.</msg>
+<arg>${txt_considertime}</arg>
+<arg>${considertime}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:12:34.978750" elapsed="0.024934"/>
+</kw>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตรอการพินิจ</doc>
+<status status="PASS" start="2024-03-05T22:12:34.878021" elapsed="0.125663"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T22:12:35.003684" elapsed="2.292229"/>
+</kw>
+<status status="PASS" start="2024-03-05T22:12:33.275530" elapsed="4.022392"/>
+</test>
+<status status="PASS" start="2024-03-05T22:12:33.103721" elapsed="4.197194"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-03-07">TS-PSF-03-07</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

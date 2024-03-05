@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-05T21:36:58.413974" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-03-04" source="D:\MulDeep\64160054\Automate\FN-PSF-03\SC-PSF-03-01\TS-PSF-03-04.robot">
+<test id="s1-t1" name="TC-PSF-03-04-01 ตรวจสอบการกรอกข้อมูลด้วย ชื่อ-นามสกุล หรือ รหัสนิสิต" line="25">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T21:36:58.581418" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageStudentConsider'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T21:36:58.581418" elapsed="1.580280"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T21:36:58.580392" elapsed="1.581306"/>
+</kw>
+<kw name="กรอกข้อมูลค้นหา">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-05T21:37:00.162695" level="INFO">Typing text 'สมพง มีมาก 63160254' into text field 'searchuser'.</msg>
+<arg>${txt_searchuser}</arg>
+<arg>${Choice}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-05T21:37:00.162695" elapsed="0.082780"/>
+</kw>
+<arg>${user_search}</arg>
+<doc>ใช้กรอกข้อมูล username</doc>
+<status status="PASS" start="2024-03-05T21:37:00.161698" elapsed="0.083777"/>
+</kw>
+<kw name="กดปุ่ม">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-05T21:37:00.246471" level="INFO">Clicking button 'btnsearch'.</msg>
+<arg>${bt_search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-05T21:37:00.246471" elapsed="0.095701"/>
+</kw>
+<doc>ใช้สำหรับกดปุ่มค้นหา</doc>
+<status status="PASS" start="2024-03-05T21:37:00.246471" elapsed="0.096698"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T21:37:00.343169" elapsed="2.079298"/>
+</kw>
+<status status="PASS" start="2024-03-05T21:36:58.578398" elapsed="3.846028"/>
+</test>
+<status status="PASS" start="2024-03-05T21:36:58.415940" elapsed="4.009373"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS-PSF-03-04">TS-PSF-03-04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

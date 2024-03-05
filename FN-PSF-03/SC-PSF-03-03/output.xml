@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-05T22:35:56.860530" rpa="false" schemaversion="5">
+<suite id="s1" name="TS-PSF-03-10" source="D:\MulDeep\64160054\Automate\FN-PSF-03\SC-PSF-03-03\TS-PSF-03-10.robot">
+<test id="s1-t1" name="TC-PSF-03-10-01 ตรวจสอบการเลือกข้อมูลของ Dropdown ข้อมูล ระดับ" line="31">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:35:57.026058" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageCon_edit/5'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T22:35:57.026058" elapsed="1.581639"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T22:35:57.025089" elapsed="1.583632"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:35:58.609691" level="INFO">Selecting options from selection list 'stuLevelCon' by label ตรี ปกติ.</msg>
+<arg>${ChoiceDD}</arg>
+<arg>${text}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:35:58.609691" elapsed="0.054974"/>
+</kw>
+<arg>${txt_level}</arg>
+<arg>${level}</arg>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตรอการพินิจ</doc>
+<status status="PASS" start="2024-03-05T22:35:58.608721" elapsed="0.055944"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T22:35:58.664665" elapsed="2.073593"/>
+</kw>
+<status status="PASS" start="2024-03-05T22:35:57.024063" elapsed="3.715612"/>
+</test>
+<test id="s1-t2" name="TC-PSF-03-10-01 ตรวจสอบการเลือกข้อมูลของ Dropdown ข้อมูล สถานภาพ" line="34">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:00.745065" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageCon_edit/5'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T22:36:00.745065" elapsed="1.529977"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T22:36:00.745065" elapsed="1.529977"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:02.276040" level="INFO">Selecting options from selection list 'stuStatusCon' by label 10.</msg>
+<arg>${ChoiceDD}</arg>
+<arg>${text}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:36:02.275042" elapsed="0.030916"/>
+</kw>
+<arg>${txt_Status}</arg>
+<arg>${Status}</arg>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตรอการพินิจ</doc>
+<status status="PASS" start="2024-03-05T22:36:02.275042" elapsed="0.030916"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T22:36:02.306955" elapsed="2.078120"/>
+</kw>
+<status status="PASS" start="2024-03-05T22:36:00.743080" elapsed="3.641995"/>
+</test>
+<test id="s1-t3" name="TC-PSF-03-10-01 ตรวจสอบการเลือกข้อมูลของ Dropdown ข้อมูล รอการพิจารณา" line="37">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:04.388067" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageCon_edit/5'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T22:36:04.387069" elapsed="1.514785"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T22:36:04.387069" elapsed="1.514785"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:05.902852" level="INFO">Selecting options from selection list 'considerCon' by label โปรต่ำ.</msg>
+<arg>${ChoiceDD}</arg>
+<arg>${text}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:36:05.902852" elapsed="0.030918"/>
+</kw>
+<arg>${txt_considerCon}</arg>
+<arg>${considerCon}</arg>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตรอการพินิจ</doc>
+<status status="PASS" start="2024-03-05T22:36:05.901854" elapsed="0.031916"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T22:36:05.933770" elapsed="2.071406"/>
+</kw>
+<status status="PASS" start="2024-03-05T22:36:04.386072" elapsed="3.620042"/>
+</test>
+<test id="s1-t4" name="TC-PSF-03-10-01 ตรวจสอบการเลือกข้อมูลของ Dropdown ข้อมูล ครั้งที่" line="40">
+<kw name="เปิดหน้าจอ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:08.008811" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8080/manageCon_edit/5'.</msg>
+<arg>${URL_page}</arg>
+<arg>${web_browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-05T22:36:08.008811" elapsed="1.543096"/>
+</kw>
+<doc>ใช้เปิดหน้าจอ และชื่อ Browser ที่ใช้เปิด</doc>
+<status status="PASS" start="2024-03-05T22:36:08.008811" elapsed="1.544093"/>
+</kw>
+<kw name="กรอกข้อมูล">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-03-05T22:36:09.553901" level="INFO">Selecting options from selection list 'considertime' by label 1.</msg>
+<arg>${ChoiceDD}</arg>
+<arg>${text}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-03-05T22:36:09.553901" elapsed="0.029920"/>
+</kw>
+<arg>${txt_considertime}</arg>
+<arg>${considertime}</arg>
+<doc>ใช้กรอกข้อมูล ที่ใช้เพิ่มข้อมูลนิสิตรอการพินิจ</doc>
+<status status="PASS" start="2024-03-05T22:36:09.552904" elapsed="0.030917"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-05T22:36:09.584818" elapsed="3.083599"/>
+</kw>
+<status status="PASS" start="2024-03-05T22:36:08.006814" elapsed="4.662574"/>
+</test>
+<status status="PASS" start="2024-03-05T22:35:56.861498" elapsed="15.812471"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TS-PSF-03-10">TS-PSF-03-10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
